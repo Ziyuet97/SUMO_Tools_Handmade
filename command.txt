@@ -1,0 +1,4 @@
+ netconvert -s osm.net.xml -o my_sumo_net.net.xml --railway.topology.all-bidi
+//铁路双向通行
+ netconvert -s osm.net.xml -o my_sumo_net.net.xml --railway.signals.discard
+//删除交通信号灯

@@ -44,8 +44,8 @@ def change_(path):  # path 是原来xml文件的完整路径
         # etree.dump(connection) // ==print connection
 
 
-    Topath = r'E:\sumo\tools\2023-08-18-14-00-05\1234' #生成新xml所在的文件夹路径
-    tree.write(Topath + path.split('\\')[-1], encoding='utf-8') #将tree写入新的文件
+    with open('E:\sumo\\RL\\1234\\1234.net.xml', 'wb') as f:
+        tree.write(f, encoding='utf-8')
  
  
 if __name__ == '__main__':
